@@ -53,6 +53,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoInaari.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -109,6 +112,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modelos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D-Calendar-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Filetype-Excel-xls.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KadensaLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoInaari.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

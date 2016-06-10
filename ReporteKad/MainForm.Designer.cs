@@ -36,15 +36,26 @@
             this.lblFechaFin = new System.Windows.Forms.Label();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxEmpleados = new System.Windows.Forms.PictureBox();
+            this.pbxFinCal = new System.Windows.Forms.PictureBox();
+            this.pbxINICal = new System.Windows.Forms.PictureBox();
             this.btnGenerar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEmpleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinCal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxINICal)).BeginInit();
             this.SuspendLayout();
             // 
             // clbEmpleados
             // 
+            this.clbEmpleados.CheckOnClick = true;
             this.clbEmpleados.FormattingEnabled = true;
-            this.clbEmpleados.Location = new System.Drawing.Point(12, 49);
+            this.clbEmpleados.Location = new System.Drawing.Point(12, 64);
             this.clbEmpleados.Name = "clbEmpleados";
-            this.clbEmpleados.Size = new System.Drawing.Size(567, 424);
+            this.clbEmpleados.Size = new System.Drawing.Size(410, 409);
             this.clbEmpleados.TabIndex = 0;
             // 
             // lblEmployee
@@ -53,7 +64,7 @@
             this.lblEmployee.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployee.Font = new System.Drawing.Font("Iskoola Pota", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployee.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblEmployee.Location = new System.Drawing.Point(12, 20);
+            this.lblEmployee.Location = new System.Drawing.Point(82, 23);
             this.lblEmployee.Name = "lblEmployee";
             this.lblEmployee.Size = new System.Drawing.Size(105, 23);
             this.lblEmployee.TabIndex = 1;
@@ -65,7 +76,7 @@
             this.lblFiltros.BackColor = System.Drawing.Color.Transparent;
             this.lblFiltros.Font = new System.Drawing.Font("Iskoola Pota", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltros.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblFiltros.Location = new System.Drawing.Point(639, 88);
+            this.lblFiltros.Location = new System.Drawing.Point(507, 129);
             this.lblFiltros.Name = "lblFiltros";
             this.lblFiltros.Size = new System.Drawing.Size(67, 23);
             this.lblFiltros.TabIndex = 2;
@@ -74,7 +85,7 @@
             // lblFechaInicio
             // 
             this.lblFechaInicio.AutoSize = true;
-            this.lblFechaInicio.Location = new System.Drawing.Point(638, 140);
+            this.lblFechaInicio.Location = new System.Drawing.Point(494, 177);
             this.lblFechaInicio.Name = "lblFechaInicio";
             this.lblFechaInicio.Size = new System.Drawing.Size(68, 13);
             this.lblFechaInicio.TabIndex = 3;
@@ -83,7 +94,7 @@
             // lblFechaFin
             // 
             this.lblFechaFin.AutoSize = true;
-            this.lblFechaFin.Location = new System.Drawing.Point(640, 204);
+            this.lblFechaFin.Location = new System.Drawing.Point(494, 289);
             this.lblFechaFin.Name = "lblFechaFin";
             this.lblFechaFin.Size = new System.Drawing.Size(57, 13);
             this.lblFechaFin.TabIndex = 4;
@@ -92,7 +103,7 @@
             // dtpFechaInicio
             // 
             this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInicio.Location = new System.Drawing.Point(614, 169);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(485, 232);
             this.dtpFechaInicio.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
             this.dtpFechaInicio.Size = new System.Drawing.Size(110, 20);
@@ -101,26 +112,91 @@
             // dtpFechaFin
             // 
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaFin.Location = new System.Drawing.Point(614, 238);
+            this.dtpFechaFin.Location = new System.Drawing.Point(486, 327);
             this.dtpFechaFin.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpFechaFin.Name = "dtpFechaFin";
             this.dtpFechaFin.Size = new System.Drawing.Size(110, 20);
             this.dtpFechaFin.TabIndex = 6;
             // 
+            // pbxLogo
+            // 
+            this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbxLogo.Image = global::ReporteKad.Properties.Resources.KadensaLogo;
+            this.pbxLogo.Location = new System.Drawing.Point(428, 9);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(184, 62);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxLogo.TabIndex = 12;
+            this.pbxLogo.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::ReporteKad.Properties.Resources.lista5;
+            this.pictureBox1.Location = new System.Drawing.Point(450, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(51, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbxEmpleados
+            // 
+            this.pbxEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.pbxEmpleados.Image = global::ReporteKad.Properties.Resources.guests;
+            this.pbxEmpleados.Location = new System.Drawing.Point(25, 9);
+            this.pbxEmpleados.Name = "pbxEmpleados";
+            this.pbxEmpleados.Size = new System.Drawing.Size(51, 49);
+            this.pbxEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEmpleados.TabIndex = 10;
+            this.pbxEmpleados.TabStop = false;
+            // 
+            // pbxFinCal
+            // 
+            this.pbxFinCal.BackColor = System.Drawing.Color.Transparent;
+            this.pbxFinCal.Image = global::ReporteKad.Properties.Resources._3D_Calendar_red;
+            this.pbxFinCal.Location = new System.Drawing.Point(439, 327);
+            this.pbxFinCal.Name = "pbxFinCal";
+            this.pbxFinCal.Size = new System.Drawing.Size(40, 43);
+            this.pbxFinCal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxFinCal.TabIndex = 9;
+            this.pbxFinCal.TabStop = false;
+            // 
+            // pbxINICal
+            // 
+            this.pbxINICal.BackColor = System.Drawing.Color.Transparent;
+            this.pbxINICal.Image = global::ReporteKad.Properties.Resources._3D_Calendar_red;
+            this.pbxINICal.Location = new System.Drawing.Point(439, 232);
+            this.pbxINICal.Name = "pbxINICal";
+            this.pbxINICal.Size = new System.Drawing.Size(40, 43);
+            this.pbxINICal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxINICal.TabIndex = 8;
+            this.pbxINICal.TabStop = false;
+            // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(631, 309);
+            this.btnGenerar.Image = global::ReporteKad.Properties.Resources.Graphicloads_Filetype_Excel_xls;
+            this.btnGenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerar.Location = new System.Drawing.Point(486, 399);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(75, 23);
+            this.btnGenerar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnGenerar.Size = new System.Drawing.Size(90, 41);
             this.btnGenerar.TabIndex = 7;
             this.btnGenerar.Text = "Generar";
+            this.btnGenerar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 482);
+            this.ClientSize = new System.Drawing.Size(624, 482);
+            this.Controls.Add(this.pbxLogo);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxEmpleados);
+            this.Controls.Add(this.pbxFinCal);
+            this.Controls.Add(this.pbxINICal);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dtpFechaFin);
             this.Controls.Add(this.dtpFechaInicio);
@@ -131,11 +207,14 @@
             this.Controls.Add(this.clbEmpleados);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(770, 520);
-            this.MinimumSize = new System.Drawing.Size(770, 520);
             this.Name = "MainForm";
             this.Text = "Reporte - Kadensa";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFinCal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxINICal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,6 +230,11 @@
         private System.Windows.Forms.DateTimePicker dtpFechaInicio;
         private System.Windows.Forms.DateTimePicker dtpFechaFin;
         private System.Windows.Forms.Button btnGenerar;
+        private System.Windows.Forms.PictureBox pbxINICal;
+        private System.Windows.Forms.PictureBox pbxFinCal;
+        private System.Windows.Forms.PictureBox pbxEmpleados;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxLogo;
     }
 }
 

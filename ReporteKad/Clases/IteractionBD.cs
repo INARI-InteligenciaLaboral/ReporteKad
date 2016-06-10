@@ -9,7 +9,8 @@ namespace ReporteKad.Clases
         {
             DataTable m_empleados = new DataTable();
             string m_Conexion = "Data Source=" + m_Cadena + ";Version=3;";
-            string m_Comand = "SELECT id, hr_employee.id || ' ' || emp_firstname || ' ' || emp_lastname as Employee FROM hr_employee ORDER BY hr_employee.id";
+            string m_Comand = "SELECT id, hr_employee.id || ' ' || emp_firstname || ' ' || emp_lastname ";
+            m_Comand += "as Employee FROM hr_employee ORDER BY hr_employee.id";
             SQLiteConnection objcon = new SQLiteConnection(m_Conexion);
             SQLiteCommand m_adapter = new SQLiteCommand(m_Comand, objcon);
             try
