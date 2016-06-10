@@ -1,28 +1,25 @@
-﻿using System.Data.SQLite;
+﻿using System.Data;
+using System.Data.SQLite;
 
 namespace ReporteKad.Clases
 {
     public class IteractionBD
     {
-        public static string ConectionSQL(string m_Cadena)
+        public static DataTable ConectionSQL(string m_Cadena)
         {
+            DataTable m_empleados = new DataTable();
             string m_Conexion = "Data Source=" + m_Cadena + ";Version=3;";
+            string m_Comand = "SELECT id, hr_employee.id || ' ' || emp_firstname || ' ' || emp_lastname as Employee FROM hr_employee ORDER BY hr_employee.id";
             SQLiteConnection objcon = new SQLiteConnection(m_Conexion);
-            SQLiteCommand objcomand;
-            SQLiteDataReader objreader;
+            SQLiteCommand m_adapter = new SQLiteCommand(m_Comand, objcon);
             try
             {
                 objcon.Open();
-                objcomand = objcon.CreateCommand();
-                objcomand.CommandText = "SELECT hr_employee.id || ' ' || emp_firstname || ' ' || emp_lastname as Employee, att_punches.punch_time FROM att_punches INNER JOIN hr_employee ON att_punches.emp_id = hr_employee.id ORDER BY hr_employee.id, punch_time desc";
-                objreader = objcomand.ExecuteReader();
-                while (objreader.Read())
-                {
-                    
-                }
+                m_empleados.Load(m_adapter.ExecuteReader());
+                objcon.Close();
             }
             catch { }
-            return "";
+            return m_empleados;
         }
     }
 }
