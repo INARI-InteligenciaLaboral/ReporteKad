@@ -1,0 +1,11 @@
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\ReporteKad.exe.config
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\ReporteKad.exe
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\ReporteKad.pdb
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\System.Data.SQLite.dll
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\System.Data.SQLite.pdb
+E:\Code\Reporte\ReporteKad\bin\x86\Debug\System.Data.SQLite.xml
+E:\Code\Reporte\ReporteKad\obj\x86\Debug\ReporteKad.MainForm.resources
+E:\Code\Reporte\ReporteKad\obj\x86\Debug\ReporteKad.Properties.Resources.resources
+E:\Code\Reporte\ReporteKad\obj\x86\Debug\ReporteKad.csproj.GenerateResource.Cache
+E:\Code\Reporte\ReporteKad\obj\x86\Debug\ReporteKad.exe
+E:\Code\Reporte\ReporteKad\obj\x86\Debug\ReporteKad.pdb
