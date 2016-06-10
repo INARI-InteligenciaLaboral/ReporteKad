@@ -42,6 +42,7 @@
             this.pbxFinCal = new System.Windows.Forms.PictureBox();
             this.pbxINICal = new System.Windows.Forms.PictureBox();
             this.btnGenerar = new System.Windows.Forms.Button();
+            this.cbxAll = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEmpleados)).BeginInit();
@@ -57,6 +58,7 @@
             this.clbEmpleados.Name = "clbEmpleados";
             this.clbEmpleados.Size = new System.Drawing.Size(410, 409);
             this.clbEmpleados.TabIndex = 0;
+            this.clbEmpleados.SelectedIndexChanged += new System.EventHandler(this.clbEmpleados_SelectedIndexChanged);
             // 
             // lblEmployee
             // 
@@ -76,7 +78,7 @@
             this.lblFiltros.BackColor = System.Drawing.Color.Transparent;
             this.lblFiltros.Font = new System.Drawing.Font("Iskoola Pota", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltros.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblFiltros.Location = new System.Drawing.Point(507, 129);
+            this.lblFiltros.Location = new System.Drawing.Point(506, 150);
             this.lblFiltros.Name = "lblFiltros";
             this.lblFiltros.Size = new System.Drawing.Size(67, 23);
             this.lblFiltros.TabIndex = 2;
@@ -85,7 +87,7 @@
             // lblFechaInicio
             // 
             this.lblFechaInicio.AutoSize = true;
-            this.lblFechaInicio.Location = new System.Drawing.Point(494, 177);
+            this.lblFechaInicio.Location = new System.Drawing.Point(494, 207);
             this.lblFechaInicio.Name = "lblFechaInicio";
             this.lblFechaInicio.Size = new System.Drawing.Size(68, 13);
             this.lblFechaInicio.TabIndex = 3;
@@ -103,7 +105,7 @@
             // dtpFechaInicio
             // 
             this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInicio.Location = new System.Drawing.Point(485, 232);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(485, 246);
             this.dtpFechaInicio.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
             this.dtpFechaInicio.Size = new System.Drawing.Size(110, 20);
@@ -133,7 +135,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ReporteKad.Properties.Resources.lista5;
-            this.pictureBox1.Location = new System.Drawing.Point(450, 115);
+            this.pictureBox1.Location = new System.Drawing.Point(449, 136);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(51, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +168,7 @@
             // 
             this.pbxINICal.BackColor = System.Drawing.Color.Transparent;
             this.pbxINICal.Image = global::ReporteKad.Properties.Resources._3D_Calendar_red;
-            this.pbxINICal.Location = new System.Drawing.Point(439, 232);
+            this.pbxINICal.Location = new System.Drawing.Point(439, 246);
             this.pbxINICal.Name = "pbxINICal";
             this.pbxINICal.Size = new System.Drawing.Size(40, 43);
             this.pbxINICal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -187,11 +189,23 @@
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
+            // cbxAll
+            // 
+            this.cbxAll.AutoSize = true;
+            this.cbxAll.Location = new System.Drawing.Point(449, 96);
+            this.cbxAll.Name = "cbxAll";
+            this.cbxAll.Size = new System.Drawing.Size(111, 17);
+            this.cbxAll.TabIndex = 13;
+            this.cbxAll.Text = "Seleccionar todos";
+            this.cbxAll.UseVisualStyleBackColor = true;
+            this.cbxAll.CheckedChanged += new System.EventHandler(this.cbxAll_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 482);
+            this.Controls.Add(this.cbxAll);
             this.Controls.Add(this.pbxLogo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbxEmpleados);
@@ -235,6 +249,7 @@
         private System.Windows.Forms.PictureBox pbxEmpleados;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbxLogo;
+        private System.Windows.Forms.CheckBox cbxAll;
     }
 }
 

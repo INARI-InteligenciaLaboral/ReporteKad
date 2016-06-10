@@ -7,6 +7,7 @@ namespace ReporteKad
 {
     public partial class MainForm : Form
     {
+        public bool m_EsClick = true;
         public MainForm()
         {
             InitializeComponent();
@@ -25,6 +26,39 @@ namespace ReporteKad
             foreach(DataRowView drv in clbEmpleados.CheckedItems)
             {
                 MessageBox.Show(drv[clbEmpleados.ValueMember].ToString());
+            }
+        }
+
+        private void cbxAll_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (m_EsClick)
+            {
+                if (cbxAll.Checked)
+                {
+                    for (int index = 0; index < clbEmpleados.Items.Count; index++)
+                        clbEmpleados.SetItemChecked(index, true);
+                }
+                else
+                {
+                    for (int index = 0; index < clbEmpleados.Items.Count; index++)
+                        clbEmpleados.SetItemChecked(index, false);
+                }
+            }
+        }
+
+        private void clbEmpleados_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            if (clbEmpleados.Items.Count == clbEmpleados.CheckedItems.Count)
+            {
+                m_EsClick = false;
+                cbxAll.Checked = true;
+                m_EsClick = true;
+            }
+            else
+            {
+                m_EsClick = false;
+                cbxAll.Checked = false;
+                m_EsClick = true;
             }
         }
     }
