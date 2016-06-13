@@ -1,5 +1,6 @@
 ﻿
 using ReporteKad.Clases;
+using System.Collections;
 using System.Data;
 using System.Windows.Forms;
 
@@ -23,10 +24,14 @@ namespace ReporteKad
 
         private void btnGenerar_Click(object sender, System.EventArgs e)
         {
-            foreach(DataRowView drv in clbEmpleados.CheckedItems)
+            string m_empleados = string.Empty;
+            ArrayList ListaEmpleados = new ArrayList();
+            foreach (DataRowView item in clbEmpleados.CheckedItems)
             {
-                MessageBox.Show(drv[clbEmpleados.ValueMember].ToString());
+                ListaEmpleados.Add(new Modelos.Empleados() { Id =  item["Id"].ToString(), NombreCompleto = item["Employee"].ToString() });
             }
+            m_empleados = GenerarInsidencias.GenInsEmp(RutaBD.BDConection(), ListaEmpleados);
+            MessageBox.Show(m_empleados);
         }
 
         private void cbxAll_CheckedChanged(object sender, System.EventArgs e)
