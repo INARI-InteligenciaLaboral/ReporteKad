@@ -1,5 +1,6 @@
 ﻿
 using ReporteKad.Clases;
+using System;
 using System.Collections;
 using System.Data;
 using System.Windows.Forms;
@@ -24,14 +25,31 @@ namespace ReporteKad
 
         private void btnGenerar_Click(object sender, System.EventArgs e)
         {
-            string m_empleados = string.Empty;
-            ArrayList ListaEmpleados = new ArrayList();
-            foreach (DataRowView item in clbEmpleados.CheckedItems)
+            if (clbEmpleados.CheckedItems.Count > 0 )
             {
-                ListaEmpleados.Add(new Modelos.Empleados() { Id =  item["Id"].ToString(), NombreCompleto = item["Employee"].ToString() });
+                eprEmpleados.Clear();
+                if (ControlValidation.validarFechas(DateTime.Parse(dtpFechaInicio.Text), DateTime.Parse(dtpFechaFin.Text)))
+                {
+                    eprFecInic.Clear();
+                    string m_empleados = string.Empty;
+                    ArrayList ListaEmpleados = new ArrayList();
+                    foreach (DataRowView item in clbEmpleados.CheckedItems)
+                    {
+                        ListaEmpleados.Add(new Modelos.Empleados() { Id = item["Id"].ToString(), NombreCompleto = item["Employee"].ToString() });
+                    }
+                    m_empleados = GenerarInsidencias.GenInsEmp(RutaBD.BDConection(), ListaEmpleados, DateTime.Parse(dtpFechaInicio.Text), DateTime.Parse(dtpFechaFin.Text));
+                    MessageBox.Show(m_empleados);
+                }
+                else
+                {
+                    eprFecInic.SetError(dtpFechaInicio, "La fecha de inicio debe ser menor o igual que la fecha fin");
+                }
             }
-            m_empleados = GenerarInsidencias.GenInsEmp(RutaBD.BDConection(), ListaEmpleados);
-            MessageBox.Show(m_empleados);
+            else
+            {
+                eprEmpleados.SetError(lblEmployee, "Seleccione por lo menos a un empleado");
+            }
+            
         }
 
         private void cbxAll_CheckedChanged(object sender, System.EventArgs e)

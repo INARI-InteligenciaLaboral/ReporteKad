@@ -10,7 +10,7 @@ namespace ReporteKad.Clases
 {
     public class GenerarInsidencias
     {
-        public static string GenInsEmp(string m_cadena, ArrayList m_empleados)
+        public static string GenInsEmp(string m_cadena, ArrayList m_empleados, DateTime m_FecInicio, DateTime m_FecFin)
         {
             string m_Reporte = string.Empty;
             foreach (var m_Row in m_empleados)

@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ControlValidation.cs" />
     <Compile Include="Clases\GenerarInsidencias.cs" />
     <Compile Include="Clases\IteractionBD.cs" />
     <Compile Include="Clases\RutaBD.cs" />

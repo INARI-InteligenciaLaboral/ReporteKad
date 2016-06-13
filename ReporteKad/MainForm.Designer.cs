@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.clbEmpleados = new System.Windows.Forms.CheckedListBox();
             this.lblEmployee = new System.Windows.Forms.Label();
@@ -43,11 +44,15 @@
             this.pbxINICal = new System.Windows.Forms.PictureBox();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.cbxAll = new System.Windows.Forms.CheckBox();
+            this.eprFecInic = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eprEmpleados = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFinCal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxINICal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprFecInic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // clbEmpleados
@@ -200,6 +205,14 @@
             this.cbxAll.UseVisualStyleBackColor = true;
             this.cbxAll.CheckedChanged += new System.EventHandler(this.cbxAll_CheckedChanged);
             // 
+            // eprFecInic
+            // 
+            this.eprFecInic.ContainerControl = this;
+            // 
+            // eprEmpleados
+            // 
+            this.eprEmpleados.ContainerControl = this;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +243,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFinCal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxINICal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprFecInic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eprEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +266,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.CheckBox cbxAll;
+        private System.Windows.Forms.ErrorProvider eprFecInic;
+        private System.Windows.Forms.ErrorProvider eprEmpleados;
     }
 }
 
