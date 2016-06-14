@@ -14,16 +14,16 @@ namespace ReporteKad
         {
             InitializeComponent();
         }
-        private void MainForm_Load(object sender, System.EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             DataTable m_Empleados = new DataTable();
-            m_Empleados = IteractionBD.ConectionSQL(RutaBD.BDConection());
+            m_Empleados = IteractionBD.ObtenerEmpleados(RutaBD.BDConection());
             clbEmpleados.DataSource = m_Empleados;
             clbEmpleados.DisplayMember = "Employee";
             clbEmpleados.ValueMember = "id";
         }
 
-        private void btnGenerar_Click(object sender, System.EventArgs e)
+        private void btnGenerar_Click(object sender, EventArgs e)
         {
             if (clbEmpleados.CheckedItems.Count > 0 )
             {
@@ -52,7 +52,7 @@ namespace ReporteKad
             
         }
 
-        private void cbxAll_CheckedChanged(object sender, System.EventArgs e)
+        private void cbxAll_CheckedChanged(object sender, EventArgs e)
         {
             if (m_EsClick)
             {
@@ -69,7 +69,7 @@ namespace ReporteKad
             }
         }
 
-        private void clbEmpleados_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void clbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (clbEmpleados.Items.Count == clbEmpleados.CheckedItems.Count)
             {

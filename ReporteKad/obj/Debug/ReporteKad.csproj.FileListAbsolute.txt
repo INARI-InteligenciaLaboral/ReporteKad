@@ -10,3 +10,4 @@ E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.exe
 E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.pdb
 E:\Code\Reporte\ReporteKad\bin\Debug\System.Data.SQLite.pdb
 E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.MainForm.resources
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csproj.ResolveComReference.cache
