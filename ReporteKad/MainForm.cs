@@ -16,6 +16,8 @@ namespace ReporteKad
             public bool m_Mensaje = true;
 
             public string m_RutaArchivo = "";
+
+            public string m_RutaBD = "";
         #endregion
 
         public MainForm()
@@ -25,7 +27,8 @@ namespace ReporteKad
         private void MainForm_Load(object sender, EventArgs e)
         {
             DataTable m_Empleados = new DataTable();
-            m_Empleados = IteractionBD.ObtenerEmpleados(RutaBD.BDConection());
+            m_RutaBD = RutaBD.BDConection();
+            m_Empleados = IteractionBD.ObtenerEmpleados(m_RutaBD);
             clbEmpleados.DataSource = m_Empleados;
             clbEmpleados.DisplayMember = "Employee";
             clbEmpleados.ValueMember = "id";

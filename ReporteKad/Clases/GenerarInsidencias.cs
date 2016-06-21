@@ -1,10 +1,6 @@
-﻿using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
-using System;
+﻿using System;
 using System.Collections;
 using System.Data;
-using System.IO;
-using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace ReporteKad.Clases
