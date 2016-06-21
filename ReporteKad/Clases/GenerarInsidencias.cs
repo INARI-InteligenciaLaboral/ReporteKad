@@ -196,6 +196,7 @@ namespace ReporteKad.Clases
             releaseObject(xlWorkSheet);
             return true;
         }
+
         private static DataTable generarHorMin(string m_cadena)
         {
             DataTable m_Horario = new DataTable();
@@ -230,6 +231,7 @@ namespace ReporteKad.Clases
             }
             return m_HorarioReturn;
         }
+
         private static void releaseObject(object obj)
         {
             try

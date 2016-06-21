@@ -24,6 +24,7 @@ namespace ReporteKad.Clases
             catch { }
             return m_empleados;
         }
+
         public static DataTable ObtenerRegistros(string m_IDEmpledo, DateTime m_FechaInicio, DateTime m_FechaFin, string m_Cadena)
         {
             DataTable m_registros = new DataTable();
@@ -45,6 +46,7 @@ namespace ReporteKad.Clases
             }
             return m_registros;
         }
+
         public static DataTable ObtenerPermisos(string m_IDEmpledo, DateTime m_FechaInicio, DateTime m_FechaFin, string m_Cadena)
         {
             DataTable m_permisos = new DataTable();
@@ -67,6 +69,7 @@ namespace ReporteKad.Clases
             }
             return m_permisos;
         }
+
         public static DataTable ObtenerHorario(string m_IDEmpledo, string m_Cadena)
         {
             DataTable m_Horarios = new DataTable();
@@ -85,6 +88,7 @@ namespace ReporteKad.Clases
             catch { }
             return m_Horarios;
         }
+
         public static DataTable ObtenerHorMin(string m_Cadena)
         {
             DataTable m_permisos = new DataTable();

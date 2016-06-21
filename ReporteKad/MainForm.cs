@@ -10,9 +10,14 @@ namespace ReporteKad
 {
     public partial class MainForm : Form
     {
-        public bool m_EsClick = true;
-        public bool m_Mensaje = true;
-        public string m_RutaArchivo = "";
+        #region VariablesGoblales
+            public bool m_EsClick = true;
+
+            public bool m_Mensaje = true;
+
+            public string m_RutaArchivo = "";
+        #endregion
+
         public MainForm()
         {
             InitializeComponent();
@@ -25,45 +30,8 @@ namespace ReporteKad
             clbEmpleados.DisplayMember = "Employee";
             clbEmpleados.ValueMember = "id";
         }
-
-        private void btnGenerar_Click(object sender, EventArgs e)
-        {
-            if (clbEmpleados.CheckedItems.Count > 0 )
-            {
-                eprEmpleados.Clear();
-                if (ControlValidation.validarFechas(DateTime.Parse(dtpFechaInicio.Text), DateTime.Parse(dtpFechaFin.Text)))
-                {
-                    eprFecInic.Clear();
-                    SaveFileDialog m_Archivo = new SaveFileDialog();
-                    m_Archivo.Filter = "XLS|*.xls";
-                    m_Archivo.Title = string.Format(" {0} - {1} ", "Inari", "Reporte");
-                    try
-                    {
-                        if (m_Archivo.ShowDialog() == DialogResult.OK)
-                        {
-                            m_RutaArchivo = m_Archivo.FileName;
-                            btnGenerar.Enabled = false;
-                            BackgroundWorker Procesar = new BackgroundWorker();
-                            Procesar.DoWork += ProcesarReporte;
-                            Procesar.RunWorkerCompleted += ProcesarTerminado;
-                            Procesar.RunWorkerAsync();
-                        }
-                    }
-                    catch
-                    {  }
-                }
-                else
-                {
-                    eprFecInic.SetError(dtpFechaInicio, "La fecha de inicio debe ser menor o igual que la fecha fin");
-                }
-            }
-            else
-            {
-                eprEmpleados.SetError(lblEmployee, "Seleccione por lo menos a un empleado");
-            }
-            
-        }
-
+        
+        #region CambiosDeEstados
         private void cbxAll_CheckedChanged(object sender, EventArgs e)
         {
             if (m_EsClick)
@@ -107,6 +75,47 @@ namespace ReporteKad
                     MessageBox.Show("Problemas al generar reporte", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #endregion
+
+        #region GenracionReporte
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            if (clbEmpleados.CheckedItems.Count > 0)
+            {
+                eprEmpleados.Clear();
+                if (ControlValidation.validarFechas(DateTime.Parse(dtpFechaInicio.Text), DateTime.Parse(dtpFechaFin.Text)))
+                {
+                    eprFecInic.Clear();
+                    SaveFileDialog m_Archivo = new SaveFileDialog();
+                    m_Archivo.Filter = "XLS|*.xls";
+                    m_Archivo.Title = string.Format(" {0} - {1} ", "Inari", "Reporte");
+                    try
+                    {
+                        if (m_Archivo.ShowDialog() == DialogResult.OK)
+                        {
+                            m_RutaArchivo = m_Archivo.FileName;
+                            btnGenerar.Enabled = false;
+                            BackgroundWorker Procesar = new BackgroundWorker();
+                            Procesar.DoWork += ProcesarReporte;
+                            Procesar.RunWorkerCompleted += ProcesarTerminado;
+                            Procesar.RunWorkerAsync();
+                        }
+                    }
+                    catch
+                    { }
+                }
+                else
+                {
+                    eprFecInic.SetError(dtpFechaInicio, "La fecha de inicio debe ser menor o igual que la fecha fin");
+                }
+            }
+            else
+            {
+                eprEmpleados.SetError(lblEmployee, "Seleccione por lo menos a un empleado");
+            }
+
+        }
+
         public void ProcesarReporte(object o, DoWorkEventArgs e)
         {
             string m_empleados = string.Empty;
@@ -117,6 +126,7 @@ namespace ReporteKad
             }
             m_Mensaje = GenerarInsidencias.GenInsEmp(RutaBD.BDConection(), ListaEmpleados, DateTime.Parse(dtpFechaInicio.Text), DateTime.Parse(dtpFechaFin.Text), m_RutaArchivo);
         }
+
         public void ProcesarTerminado(object o, RunWorkerCompletedEventArgs e)
         {
             this.BeginInvoke(new Action(() =>
@@ -125,5 +135,6 @@ namespace ReporteKad
             }));
 
         }
+        #endregion
     }
 }

@@ -46,6 +46,7 @@ namespace ReporteKad.Clases
             }
             return m_Ubicacion;
         }
+
         private static void crearArchivo(string m_UbicacionArchivo)
         {
             string m_archivo = Application.StartupPath + "\\RutaBD.txt";
