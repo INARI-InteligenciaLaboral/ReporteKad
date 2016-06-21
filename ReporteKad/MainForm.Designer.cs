@@ -192,6 +192,7 @@
             this.btnGenerar.Text = "Generar";
             this.btnGenerar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.EnabledChanged += new System.EventHandler(this.btnGenerar_EnabledChanged);
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // cbxAll

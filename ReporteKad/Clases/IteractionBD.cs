@@ -28,7 +28,7 @@ namespace ReporteKad.Clases
         {
             DataTable m_registros = new DataTable();
             string m_Conexion = "Data Source=" + m_Cadena + ";Version=3;";
-            string m_command = "SELECT punch_time FROM att_punches ";
+            string m_command = "SELECT punch_time, emp_id FROM att_punches ";
             m_command += "WHERE emp_id = " + m_IDEmpledo + " AND punch_time BETWEEN @FechaInicio AND @FechaFin";
             using (SQLiteConnection m_conexion = new SQLiteConnection(m_Conexion))
             {

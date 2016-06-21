@@ -57,6 +57,21 @@
     <ApplicationIcon>logoInaari.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Users\TI-proganalista\Downloads\NPOI 2.2.1 binary package\Release\Net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>C:\Users\TI-proganalista\Downloads\NPOI 2.2.1 binary package\Release\Net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>C:\Users\TI-proganalista\Downloads\NPOI 2.2.1 binary package\Release\Net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>C:\Users\TI-proganalista\Downloads\NPOI 2.2.1 binary package\Release\Net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>C:\Users\TI-proganalista\Downloads\NPOI 2.2.1 binary package\Release\Net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
