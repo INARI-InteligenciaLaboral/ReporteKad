@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReporteKad.exe" size="817128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReporteKad.exe" size="817640">
       <assemblyIdentity name="ReporteKad" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>b70v8YQnkI3fa5uTaqzrp35kRAA=</dsig:DigestValue>
+        <dsig:DigestValue>dmwLKQ2mt65iGemXprJcvFyoRwQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -135,13 +135,13 @@
       <dsig:DigestValue>bFO9cMPCoWQ7LGCglMgvlXFQ+Fg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ReporteKad.exe.config" size="241">
+  <file name="ReporteKad.exe.config" size="226">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>nfcHey5i/V8v78fisqYJvyM+LOo=</dsig:DigestValue>
+      <dsig:DigestValue>rOYm5ocYihv9IPaqQd+S5ud10tE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

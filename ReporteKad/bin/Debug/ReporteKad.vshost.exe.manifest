@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReporteKad.exe" size="817128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReporteKad.exe" size="817640">
       <assemblyIdentity name="ReporteKad" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>b70v8YQnkI3fa5uTaqzrp35kRAA=</dsig:DigestValue>
+        <dsig:DigestValue>YCb4h3oMi4OuhWuatuntfUCBt2A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

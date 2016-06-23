@@ -1,3 +1,11 @@
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csprojResolveAssemblyReference.cache
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csproj.ResolveComReference.cache
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.MainForm.resources
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.Properties.Resources.resources
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csproj.GenerateResource.Cache
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.exe.manifest
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.exe
+E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.pdb
 E:\Code\Reporte\ReporteKad\bin\Debug\ReporteKad.exe.config
 E:\Code\Reporte\ReporteKad\bin\Debug\ReporteKad.exe.manifest
 E:\Code\Reporte\ReporteKad\bin\Debug\ReporteKad.application
@@ -11,12 +19,4 @@ E:\Code\Reporte\ReporteKad\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\Code\Reporte\ReporteKad\bin\Debug\System.Data.SQLite.dll
 E:\Code\Reporte\ReporteKad\bin\Debug\NPOI.xml
 E:\Code\Reporte\ReporteKad\bin\Debug\System.Data.SQLite.xml
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csprojResolveAssemblyReference.cache
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csproj.ResolveComReference.cache
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.MainForm.resources
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.Properties.Resources.resources
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.csproj.GenerateResource.Cache
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.exe.manifest
 E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.application
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.exe
-E:\Code\Reporte\ReporteKad\obj\Debug\ReporteKad.pdb
