@@ -28,9 +28,7 @@ E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\ReporteKad.application
 E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\ReporteKad.exe
 E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\ReporteKad.pdb
 E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\System.Data.SQLite.dll
-E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\NPOI.xml
 E:\CodeUser\ReporteKad\ReporteKad\bin\x86\Debug\System.Data.SQLite.xml
-E:\CodeUser\ReporteKad\ReporteKad\obj\x86\Debug\ReporteKad.csprojResolveAssemblyReference.cache
 E:\CodeUser\ReporteKad\ReporteKad\obj\x86\Debug\ReporteKad.MainForm.resources
 E:\CodeUser\ReporteKad\ReporteKad\obj\x86\Debug\ReporteKad.Properties.Resources.resources
 E:\CodeUser\ReporteKad\ReporteKad\obj\x86\Debug\ReporteKad.csproj.GenerateResource.Cache

@@ -28,8 +28,8 @@
     <ProductName>Reporte - Kadensa</ProductName>
     <PublisherName>INARI Inteligencia Laboral</PublisherName>
     <SuiteName>INARI</SuiteName>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>16.8.9.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
